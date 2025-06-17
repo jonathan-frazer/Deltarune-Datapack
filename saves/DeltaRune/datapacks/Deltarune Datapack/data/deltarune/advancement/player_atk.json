@@ -10,6 +10,6 @@
     }
   },
   "rewards": {
-    "function": "deltarune:deltarune/player_atk"
+    "function": "deltarune:deltarune/player/atk"
   }
 }

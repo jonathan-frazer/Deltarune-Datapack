@@ -7,4 +7,7 @@
     execute as @a[scores={dR_transform=1..}] at @s run function deltarune:dark_fountain/3_seq
 
 #Gang
-    execute as @a[tag=dR-Activate] run function deltarune:gang/effect
+    execute as @a[tag=dR-Activate] run function deltarune:gang/tick
+
+    #Follow
+    kill @e[type=area_effect_cloud,tag=deltaTrail,scores={SRXIITimer=20..}]
