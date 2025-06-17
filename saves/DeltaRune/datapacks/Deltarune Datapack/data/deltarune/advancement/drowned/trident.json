@@ -1,0 +1,31 @@
+{
+    "criteria": {
+      "trident": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "player": {
+            "type": "minecraft:player",
+            "equipment": {},
+            "slots": {
+              "weapon.*": {
+                "items": "minecraft:trident",
+                "components": {
+                  "minecraft:enchantments": {
+                    "levels": {
+                      "minecraft:riptide": 3
+                    }
+                  },
+                  "minecraft:custom_data": {
+                    "mbGemTrident": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "deltarune:deltarune/drowned/riptide/1_using"
+    }
+  }

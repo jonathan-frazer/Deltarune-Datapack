@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "attack_player": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "type": "minecraft:player"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "deltarune:deltarune/player_atk"
+  }
+}

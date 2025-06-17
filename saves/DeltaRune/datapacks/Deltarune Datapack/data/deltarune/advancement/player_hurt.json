@@ -1,0 +1,10 @@
+{
+    "criteria": {
+      "interrupt_sleep": {
+        "trigger": "minecraft:entity_hurt_player"
+      }
+    },
+    "rewards": {
+      "function": "deltarune:deltarune/player_hurt"
+    }
+  }

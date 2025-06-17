@@ -1,0 +1,26 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "effects": {
+      "minecraft:darkness": {
+        "amplifier": 1,
+        "duration": {
+          "min": 0,
+          "max": 240
+        },
+        "ambient": true,
+        "visible": false
+      },
+      "minecraft:blindness": {
+        "amplifier": 3,
+        "duration": {
+          "min": 0,
+          "max": 240
+        },
+        "ambient": true,
+        "visible": false
+      }
+    }
+  }
+}

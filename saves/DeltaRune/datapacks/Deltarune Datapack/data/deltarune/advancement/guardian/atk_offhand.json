@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "guardian_hit": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player",
+          "slots": {
+            "weapon.offhand": {
+              "items": "minecraft:warped_fungus_on_a_stick",
+              "components": {
+                "minecraft:custom_model_data": 523200
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "deltarune:deltarune/guardian/player_thorns/0"
+  }
+}

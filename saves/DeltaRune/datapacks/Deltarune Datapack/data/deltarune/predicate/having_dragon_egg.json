@@ -1,0 +1,41 @@
+{
+    "condition": "minecraft:any_of",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "minecraft:player",
+                "slots": {
+                    "inventory.*": {
+                        "items": "minecraft:dragon_egg"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "minecraft:player",
+                "slots": {
+                    "hotbar.*": {
+                        "items": "minecraft:dragon_egg"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "minecraft:player",
+                "slots": {
+                    "weapon.offhand": {
+                        "items": "minecraft:dragon_egg"
+                    }
+                }
+            }
+        }
+    ]
+}

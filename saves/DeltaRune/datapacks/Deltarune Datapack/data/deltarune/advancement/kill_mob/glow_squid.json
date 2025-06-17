@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "acquire_gem": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "player": {
+                    "type": "minecraft:player"
+                },
+                "entity": {
+                    "type": "minecraft:glow_squid"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "deltarune:acquire_gem/glow_squid"
+    }
+}
