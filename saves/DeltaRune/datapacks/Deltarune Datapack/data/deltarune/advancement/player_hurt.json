@@ -5,6 +5,6 @@
     }
   },
   "rewards": {
-    "function": "deltarune:deltarune/player_hurt"
+    "function": "deltarune:player/hurt"
   }
 }
