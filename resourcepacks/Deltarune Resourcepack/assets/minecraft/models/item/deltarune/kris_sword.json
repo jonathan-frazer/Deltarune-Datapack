@@ -1,0 +1,31 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/deltarune/kris_sword"
+	},
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [45, 90, 0],
+			"translation": [0, 5, 1.75]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-45, 90, 0],
+			"translation": [0, 4.75, 2]
+		},
+		"firstperson_righthand": {
+			"rotation": [20, 90, 0],
+			"translation": [0, 4.75, 0],
+			"scale": [0.86, 0.86, 0.75]
+		},
+		"firstperson_lefthand": {
+			"rotation": [20, -90, 0],
+			"translation": [0, 6, 0],
+			"scale": [0.86, 0.86, 0.76]
+		},
+		"gui": {
+			"translation": [-0.5, -0.5, 0],
+			"scale": [1.075, 1.075, 1]
+		}
+	}
+}

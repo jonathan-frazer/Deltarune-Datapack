@@ -39,6 +39,12 @@
                 "custom_model_data": 900630
             },
             "model": "item/deltarune/inv/team_blast"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 900631
+            },
+            "model": "item/deltarune/kris_sword"
         }
     ]
 }

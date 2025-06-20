@@ -1,0 +1,1 @@
+effect give @e[type=!#deltarune:nalive,distance=..3.1,type=!player] slowness 1 4 true

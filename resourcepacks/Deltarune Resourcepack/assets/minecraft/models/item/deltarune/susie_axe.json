@@ -1,0 +1,32 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/deltarune/susie_axe"
+	},
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-45, -90, 0],
+			"translation": [0, 6, 2.5]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-45, 90, 0],
+			"translation": [0, 5.75, 1.75]
+		},
+		"firstperson_righthand": {
+			"rotation": [-48, -98, 0],
+			"translation": [1.75, 3.5, 0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-53, 90, 0],
+			"translation": [0.75, 4.25, 0]
+		},
+		"gui": {
+			"translation": [2.25, 0, 0]
+		},
+		"fixed": {
+			"rotation": [0, 180, 0],
+			"translation": [-1.75, 0, 0]
+		}
+	}
+}

@@ -1,3 +1,6 @@
+#Cooldowns
+execute if score @s dR_globalCooldown matches 1.. run scoreboard players remove @s dR_globalCooldown 1
+
 #Gives Effect
 execute unless data entity @s Inventory[{Slot:102b}].id run item replace entity @s armor.chest with leather_chestplate[custom_name='{"bold":false,"color":"#67cdf9","italic":false,"text":"Mantle"}',lore=['{"bold":false,"color":"light_purple","italic":false,"text":"Made of pure Leather"}'],custom_data={deltaRuneItem:1b},enchantments={levels:{"minecraft:binding_curse":1}},dyed_color={rgb:2671851,show_in_tooltip:false}] 1
 execute unless data entity @s Inventory[{Slot:101b}].id run item replace entity @s armor.legs with netherite_leggings[custom_name='{"bold":false,"color":"#67cdf9","italic":false,"text":"Armored Leggings"}',lore=['{"bold":false,"color":"light_purple","italic":false,"text":"A pair of leggings, lightly armored"}'],custom_data={deltaRuneItem:1b},enchantments={levels:{"minecraft:binding_curse":1}},trim={material:"minecraft:diamond",pattern:"minecraft:rib",show_in_tooltip:false}]

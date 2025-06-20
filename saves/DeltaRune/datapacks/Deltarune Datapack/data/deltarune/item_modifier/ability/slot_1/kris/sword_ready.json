@@ -1,0 +1,33 @@
+[
+  {
+    "function": "minecraft:set_custom_model_data",
+    "value": 900631,
+    "conditions": []
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.attack_damage",
+        "id": "kris:base_sword_dmg",
+        "amount": 5.5,
+        "operation": "add_value",
+        "slot": "mainhand"
+      },
+      {
+        "attribute": "minecraft:generic.attack_speed",
+        "id": "kris:base_sword_speed",
+        "amount": -0.6,
+        "operation": "add_multiplied_total",
+        "slot": "mainhand"
+      },
+      {
+        "attribute": "minecraft:generic.attack_knockback",
+        "id": "kris:base_sword_kb",
+        "amount": 2.0,
+        "operation": "add_value",
+        "slot": "mainhand"
+      }
+    ]
+  }
+]

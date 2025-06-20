@@ -6,6 +6,7 @@ tag @s add dR-Activate
 
 #Scores
 scoreboard players set @s dR_TP 100
+scoreboard players set @s dR_globalCooldown 0
 
 #Bossbar
 data modify storage deltarune:temp UniqueID.id_1 set from entity @s UUID[0]

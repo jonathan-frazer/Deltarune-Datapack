@@ -15,6 +15,7 @@ tag @s remove dR-Activate
 
 #Scores
 scoreboard players reset @s dR_TP
+scoreboard players reset @s dR_globalCooldown
 
 #Bossbar
 data modify storage deltarune:temp UniqueID.id_1 set from entity @s UUID[0]

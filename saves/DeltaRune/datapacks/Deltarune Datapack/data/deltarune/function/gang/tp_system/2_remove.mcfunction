@@ -1,0 +1,1 @@
+$bossbar remove deltarune:tp_$(id_1)$(id_2)$(id_3)$(id_4)

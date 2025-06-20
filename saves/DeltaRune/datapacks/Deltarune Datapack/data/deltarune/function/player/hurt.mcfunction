@@ -1,0 +1,1 @@
+advancement revoke @s only deltarune:player_hurt
