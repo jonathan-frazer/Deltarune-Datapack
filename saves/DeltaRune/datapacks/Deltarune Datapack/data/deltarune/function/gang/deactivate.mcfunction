@@ -4,13 +4,24 @@ playsound entity.zombie.infect master @a[distance=..16] ~ ~ ~ 1 1.75 1
 #Kill all trails
 kill @e[type=area_effect_cloud,tag=deltaTrail,distance=..64]
 
-#Clear Armor
-clear @s leather_chestplate[custom_name='{"bold":false,"color":"light_purple","italic":false,"text":"Mantle"}',lore=['"Made of pure leather"'],custom_data={deltaRuneItem:1b},enchantments={levels:{"minecraft:binding_curse":1}},dyed_color={rgb:2671851,show_in_tooltip:false}] 1
-clear @s netherite_leggings[custom_name='{"bold":false,"color":"#67cdf9","italic":false,"text":"Armored Leggings"}',lore=['"A pair of leggings, lightly armored"'],custom_data={deltaRuneItem:1b},enchantments={levels:{"minecraft:binding_curse":1}},trim={material:"minecraft:diamond",pattern:"minecraft:rib",show_in_tooltip:false}]
-clear @s leather_boots[custom_name='{"bold":false,"color":"light_purple","italic":false,"text":"Shoes"}',lore=['"Keeps your feet from aching"'],custom_data={deltaRuneItem:1b},enchantments={levels:{"minecraft:binding_curse":1}},dyed_color={rgb:2671851,show_in_tooltip:false}] 1
+#Clear Armor and Items
+clear @s leather_chestplate[custom_data={deltaRuneItem:1b}]
+clear @s netherite_leggings[custom_data={deltaRuneItem:1b}]
+clear @s leather_boots[custom_data={deltaRuneItem:1b}]
+clear @s warped_fungus_on_a_stick[custom_data={deltaRuneItem:1b}]
 
 #Clear Tags
 tag @s remove dR-Activate
+
+#Scores
+scoreboard players reset @s dR_TP
+
+#Bossbar
+data modify storage deltarune:temp UniqueID.id_1 set from entity @s UUID[0]
+data modify storage deltarune:temp UniqueID.id_2 set from entity @s UUID[1]
+data modify storage deltarune:temp UniqueID.id_3 set from entity @s UUID[2]
+data modify storage deltarune:temp UniqueID.id_4 set from entity @s UUID[3]
+function deltarune:gang/tp_system/2_remove with storage deltarune:temp UniqueID
 
 #Delete Gang
 execute at @e[type=armor_stand,tag=deltaFunGang,limit=2,distance=..64,sort=nearest] run particle smoke ~ ~1 ~ 0.125 0.75 0.125 0.001 10 normal @a[distance=..64] 

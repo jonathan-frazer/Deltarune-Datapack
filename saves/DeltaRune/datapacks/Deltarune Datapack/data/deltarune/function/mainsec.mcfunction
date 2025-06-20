@@ -5,5 +5,8 @@
     execute as @a[tag=!dR-Activate,nbt={DeathTime:0s},predicate=deltarune:gang/has_head] at @s run function deltarune:gang/activate with storage deltarune:player_rotation
     execute as @a[tag=dR-Activate] run function deltarune:gang/effect
 
+#Clean Items
+kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{deltaRuneItem:1b}}},OnGround:1b}]
+
 #Cycle every Second
 schedule function deltarune:mainsec 20t

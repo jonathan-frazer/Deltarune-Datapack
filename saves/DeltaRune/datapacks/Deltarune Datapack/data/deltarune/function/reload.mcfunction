@@ -12,5 +12,8 @@ scoreboard objectives add dR_delX dummy
 scoreboard objectives add dR_delY dummy
 scoreboard objectives add dR_delZ dummy
 
+scoreboard objectives add dR_TP dummy
+scoreboard players set maxBar dR_TP 1000
+
 schedule function deltarune:mainhalfsec 10t
 schedule function deltarune:mainsec 20t
